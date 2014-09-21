@@ -1,0 +1,14 @@
+<div class="center hero-unit">
+  <h1>Welcome to the CMS</h1>
+
+  <h2>
+    This is the home page for the
+    CMS application.
+  </h2>
+  
+  <% unless user_signed_in? %>
+    <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-large btn-primary" %>
+  <% end %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
